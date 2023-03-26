@@ -1,0 +1,137 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,1263.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="455.2,1198.4" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Instagram" sap:VirtualizedContainerService.HintSize="412,1107.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="d3dde020-695f-4021-b3e3-243fd683d485" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,885.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,216.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="d3dde020-695f-4021-b3e3-243fd683d485" Text="anonymuss1516" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1049, 367, 324, 45" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" Guid="bb7d28b6-3ee3-4dde-bad7-67a97431148f" ImageBase64="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" InformativeScreenshot="7f86aa340c2a7ca10503ae88d2d8e3f6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,216.8" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="d3dde020-695f-4021-b3e3-243fd683d485" Text="tomjerry" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1049, 421, 324, 45" ElementType="InputBoxPassword" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' aaname='' /&gt;" Guid="a5228327-34aa-4794-b057-e707f191b2f6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAUgAAAAxCAYAAAC4TjCOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALrSURBVHhe7dghTyNBHMbh+/4CgwCDwWBQGDAovgAKU1wljlRh9u7d5N9MJjt3l6Ynjnk2eVJ2dna2mF9m+2NxOBwOx+YhkA6HwzE4joE8HA7Lfr9fdrsdAL+sgUwcv76+AGisgczOcesiwMzWQGYruXURYGYCCTAgkAADAgkwIJAAAwIJMCCQAAMCCTAgkAADAgkwIJAAAwIJMCCQAAMCCTAgkAADJwXy/f19uby8XC4uLo5ub2+Xz8/Pzfn/q/yfNzc3y8fHx+Z14Hs7OZB9OO7v779dJAUS5na2QObvjOVaO/d/JpAwt7MG8vr6enl9fV13kdlN1ut3xtu5mdO+nue8XaPGsyuttWpO3Z9X/IpxP6dfp3/+8/PzOv/x8XG9nvOMZ7366SCfLy8vAgkTO1sgM3Z1dbV+RuJS1xK66OfV+dvb2zFyFauc1xoZq/vrPBFrg1i710jc2qBmfhvJur+eFf199X36uALzOEsgKyZtxFqJTq5nXn9vqTXasJWMVagy7+7ublXPa9dvY1z6tftgxtZ9o+8KzOHkQNaraGl3Y5EYtdcrYBWrrXtqZ1dzazyBaneIiWN2nfnMvNwXtXa/biR+NZ7P9hmj+wQS5na2V+xWYtTu0NodXs3JtcxJaLNejUfu7wNagSsVzYQya+cZFbraKbb+JpD9fQIJczt7ICtcbfS2AlkSq8SrH++fUfMeHh6Oa+c8v1Nm7ZqXsX69PoB9IGPrvsz3GyTM6+yBrBjVbi1zEpkKUqLT7tQqTJn39PR0HO/jlGdmt9nvTLPTbMNW89pn9EHcCmTmt7vZ+t4CCfP6J6/YFanEK4GpXV6C1F5r41ZhrfE+THX9TzFsx2utPoZbgYwKbj0/57/7P4Hv7aRAAsxAIAEGBBJgQCABBgQSYEAgAQYEEmBAIAEGBBJgQCABBgQSYEAgAQYEEmBAIAEGBBJgYA3kfr/fvAgwszWQh8Nh8yLAzNZA5kgks5PM6zYAu+Un7lW2/ZvNNUwAAAAASUVORK5CYII=" InformativeScreenshot="125e300cc32a994f8a1ee2cdaa04000a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d3dde020-695f-4021-b3e3-243fd683d485" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.instagram.com/" DesignTimeRectangle="1068, 493, 296, 23" ElementType="Text" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl aaname='Log in' parentid='loginForm' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Log in' parentid='loginForm' tag='DIV' type='' check:text='Log in' /&gt;" Guid="d536cf11-b660-4c05-a28b-1a6a87134eae" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASwAAAAbCAYAAADGdbLUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKnSURBVHhe7duxTttQFMZxXoVH6Ct05BFY+wiMXTtmTDfGMEVdKmVBYmiFWCohVKmmqkqqVhURqoIlEDgxtk+PHTu+JKclCREyuv8r/Qa+e+Jk+nTjmI2Nt7cCAM+CGQJAE5khADSRGQJAE5khADSRGQJAE5khADSRGQJPqRtL+3MsL6w9wGWG8EAigeQrk4NDa/+pjKV3U3wQCX/Fxj7gMEN4oCmFNZLdYfFBJPgyMvYBhxnCA00pLGAJZggPUFh4hswQHliwsDqxtM8zCZNiuFjRSF9zMpZNd64by94wkyithjJ5d1S/x647O2P3shiS4LTMDlMJ82CUys7+nRxHxbaIXju8uJOtmdfDI2YIDyxQWFpWB9OyyKSvhRRcl3/rGpyNjTnNL8s5LblJvGJhxZOiDK/0eqpagx/l+8I/ZggPPFxYr8+LAW0dPel06nzrVE9SeZ6m0tb85beyTOJUWt1qLpLts6pkViwsXf2vdTm9+lle7yaR7TKDZ8wQHniosOpT0/GJsTeq96pf+eZOPp1E+sXOqiesVN64s0fOV0U3hz/MEB5YoLCKUrL33ZKZK5ypNdzDcmf/lcMfZggPLFpY/z9hHX2qC6f/feY5qvePPGFRWJhlhvDAGu5hJam0NN/5Xd5byotkOhfVOYWFdTFDeKAqLF35r3mxK5V2PqMnpKB6nMH4lTA4Le9Z9ebn+nmjRdmkYCgsrIsZwgNOYc0tp2Dy56sutHiq56t0hdep7H28//Vv84Ner7xJn6/wSk9feZEVf1FYWBMzBNahKphUy8vaB5ZlhsBjdcayV56c5M/d/afigVWZIbCUyT2s8DqTIL/Pdel8hUz062DPeg2wAjMElhJLT8tq+n+E+dKiGgwTae1HxjywIjMEgCYyQwBonFv5CyoivFD5Ofg+AAAAAElFTkSuQmCC" InformativeScreenshot="09e81fe6aaee133f928a5850dea9f318.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Instagram' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1048, 485, 335, 40" ElementType="Button" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Log in' check:text='Log in' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVMAAAAsCAYAAADYSFvUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPnSURBVHhe7d1BSxtBGMZxod+j4EfoV+ixxx699urNY689erQ9CVKIJ+mlIAXBQ0W8FEQKTUqpKS1FkaIBRZOs2bydd9zZbLKzbhJHXfH/wC/g7OzqoTzMbna7M0IIIeTGoUwJISRAKFNCCAmQ0jJdafTk5aeuPH3flifvLmTmLQA8Dtp52n3agdqF16WwTHVHPYjvFwDAY6SdWFSq3jKd34q8BwIAXNiOHE2uTClSACg3WqhDZarLV99OAIC87Cn/UJlyjRQAxqed6ZKWKatSAJicW52mZapf/fsmAgCKaXdq0jLlFB8AJudO9dMy5YZ8AJicdqcmLVPfJABAOduh9tPENwEAUM52qP008U0AHqS1SJa+RvLMtw24BbZD7aeJbwIwvp7U7b+kvmxu+7bfla6sn9s/RFp/eJoPd0NDmSKQqpRpR5aP7R8i9W8dz3YgPA1likCqUqbA3dNQpgiEMsXjpaFMEciYZVqLZOmgL63MfwnZ7ph99roym523FsnqcV/asZvUlw87g9+xnJ07YvnETpJ6IxnbjqWlA51YFjYuZdc9Tm2O3Tq6lBcj+wOT0lCmCGSMMjVFupkWWV+apizrZ8nPJof7ySPNQ/PM+EkyzxTw1fCUZRpdlXjr1BzPcDn8xaPUuBkNZYpAysv09YGdYBrRrBBrg/EXDbMC1fE4liUz/vxHUnRRLItrbl5b5vZdAU5ZpibN74PifPU7Od55T+aSMWAaGsoUgZSV6WC1ubvn2dYZbHPfxudWjLWeNO2WaVemsbzJzt3JnP5nx4EJaShTBDJGmdrC9G/PFmCuDFMBrplm5xaNAxPSUKYIZNwyvX5luvNlUIbNnyP3iX684cqUMsUt0VCmCCTANdNeLItmfOFvci1TSy6d1x6MU6aoGA1likBcmZrot+5RVixLOsesLOvulijPt/n1RnKNdD0/r6lt2+5flR9liorRUKYIJFOmuWTKT+8fPTKl6O4fNWmdxbK6NXxKP/vZHC/5wkrTOjWrVi1Z+xNlimrRUKZ4OFz5xaZYfduBe2I71H6a+CYAlVHrymqy4pR/l8NPSwH3TEOZooKurpm2zvpS1+uqJ5nLAj1zir/u2we4PxrKFBUUybop0vS5fI0p0cPjnixu8OJHVI8mLVNeqAcAk8u9UI9XPQPA5HKvetYX6fsmAgCKaXdq0jJdafS8EwEAxbQ7NWmZajjVB4DxuVN8zVCZsjoFgPG5ValmqEw181u8HhcAymhXZpMrUw2FCgDFRotU4y1TjS5fuYYKAAPaidlT+2wKy9RFd9Sv/vUg3NgP4DHRztPu0w4sKlGX0jIlhBBSFpH/bUEsg1fpTJkAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[string.Format(&quot;Successfully logged in!&quot;)]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1098" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="ad3af6a70a58cbc3759b94832c31ba8e.png" Selector="&lt;html app='chrome.exe' title='Instagram'/&gt;" Url="https://www.instagram.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>

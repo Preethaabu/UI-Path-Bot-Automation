@@ -1,0 +1,115 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,1202.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="26">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="24">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="455.2,1137.6" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Chennaithodi, Karnataka, India Weather Forecast | AccuWeather" sap:VirtualizedContainerService.HintSize="412,1046.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="3e1de979-c203-4911-9453-930fdd030db3" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,824.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,216.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="3e1de979-c203-4911-9453-930fdd030db3" Text="Pondicherry" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.accuweather.com/en/in/chennaithodi/2864642/weather-forecast/2864642" DesignTimeRectangle="1109, 166, 300, 21" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" Guid="3d1d3d77-5c3b-46b2-b3a8-98131ae3e44d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAATAAAAAZCAYAAAC2L3K5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANFSURBVHhe7Zq9juowEEZ5RqR9H7TiHfYBEFvR8QQ0bENFRQ0FDQ0SoqHwzZd4YDxxiC8XNs7lO5K18d9M0hyNzQ4cIYT0FAqMkEROp5N/IrlAgRGSCAWWHxQYIYlQYPlBgRGSCAWWHxQYIYlQYPlRE9h2u3Wj0eja5vO5u1wufrZb8G6TycSdz2c/QsjvkaPAlp8DN/hc+l6G/IzdYDBw4x/ffzKBwERe+CssFotsJEaBkS6hwB7AC2z4vfcDzyUQGGSFpoEsIA0tta6gwEiXUGD32X8PXyaqJq4CQ4WFSssKLCcoMNIlFNh98C6dCQys1+skQWCdvidDXyNVm8x/fX25w+HgZysRQZar1ao2jznZh6aFKgLbbDbBGpufkFfQX4Et3bg4xuEoV7VxMWLZu+mHXjN0052f8pS5VJybrGx8NJ9jN3XDWqyWXOWeYr8/fl5b5DsDgUkVdk8KGNfCEVnJetsHeNZiFEnZHDa2rQpln76Tw1rswRwhr6SXAitlEFZGOOqF0vAC0nFKedzWlHk+poV6PD7u7XK+klKtAqsJrCmXiuVjh6Kt9tn4gcAEkYKVjAjFigfyEKlAUiIXAfEgMBGTVFIiNNAU+3g8lvuwFvu04ITY3R0hz6aPAitlpcVTYmRTCsRWZXu33+2LKghr8FyN3rDCShRYNJf5jpocK2LfEhWYICLTcoJ4bLUTE5ImRWBNsTVNeSgw8hv0UWBN83o8Lrk2HhNYU65gvFa1Vfy1wIBIDPIQyaAys02LBWvtvK6cKDDSR95bYLF7rh4ITB/tUiVjj3mswMj/wPsKLHb/lFkFpistjRZL0z2VBnNy5BRSBJYSmwIjXfJed2CKqFAeE1j6HdgDFRjkYasniEFLA2t0XwQn0oJkdAwRU9sREtj8slfHpsBIV/RRYJUMQrGUIggE0fbLYL0Cq2KEY9F3qcmoLVfBowIDkIi+uxJ5aCASvcbKA309j//bms1mrQID92JTYKRLshUYhBBpt1/x7P1VrNqqKqjbGiMQL5lrKwSE3EHF5WVZzt89Drbk+heBEULi5Ciwd4cCIyQRCiw/KDBCEqHA8oMCIyQRCiw/KDBCEqHA8oMCIyQRCiw3nPsDGFSQynuffoUAAAAASUVORK5CYII=" InformativeScreenshot="b8e42c11c6001ef52d84099a3e3414a2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Chennaithodi, Karnataka, India Weather Forecast | AccuWeather' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Pondicherry, Puducherry,'" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3e1de979-c203-4911-9453-930fdd030db3" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.accuweather.com/en/in/chennaithodi/2864642/weather-forecast/2864642" DesignTimeRectangle="1055, 266, 405, 58" ElementType="Text" FriendlyName="'Pondicherry, Puducherry,'" FullSelectorArgument="&lt;webctrl aaname='Pondicherry, Puducherry, IN' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Pondicherry, Puducherry, IN' tag='DIV' type='' check:text='Pondicherry, Puducherry, IN' /&gt;" Guid="1392716f-3540-4e66-9824-b4d742cad4a5" ImageBase64="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" InformativeScreenshot="45ddeddddb8f4aacb5088b9db4a1aa7d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Chennaithodi, Karnataka, India Weather Forecast | AccuWeather' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Current Weather'" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="3e1de979-c203-4911-9453-930fdd030db3" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.accuweather.com/en/in/pondicherry/190056/weather-forecast/190056" DesignTimeRectangle="545, 476, 132, 112" FriendlyName="'28°C'" FullSelectorArgument="&lt;webctrl aaname='28°' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' /&gt;" Guid="5a2c8006-9368-46d1-98f7-ede03acc6a6a" InformativeScreenshot="eee4a1fcad362c46dc93a6c494b0cfa5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Pondicherry, Puducherry, India Weather Forecast | AccuWeather' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="374, 401, 380, 30" FriendlyName="'Current Weather'" FullSelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Current Weather &amp;#x9;&amp;#x9;&amp;#x9;' tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;Current Weather &amp;#x9;&amp;#x9;&amp;#x9;' tag='H2' type='' check:text='Current Weather' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYAAAAAiCAYAAABWZA7uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQESURBVHhe7Zp9bqMwEEdzxki9UMVV0qMkB+kfPQZr7DEYe4YYQiArvydZWhp/jE35PVLtpQcAgCZBAAAAjYIAAAAaBQEAADQKAgAAaBQEAADQKAgAAKBREAAAQKMgAACARkEAAACNogjg3neXS39J2/ddPhMenfv5tb/9yvWMv/725cZ83dy/BN8/m3NoaR+PjFX6dg/pIvz9XNV+oXVuF4H7t7su1hF+b/3V9b/+hE+X55SWn4VH2fNI/We1e5ohe8jr8vsu5pi3uO/Q15g//j6k88c1jTbeq+r7DgBnMBeAGiYSAOlDu0kAef8Y9mnwyM9U4UyBNRDC0qphIgZhOnYkE0DOojwyQj1KiI5hqdUazjYGZu2eUiZpWAE+YJyrsFUA1rmNVN93ADiDRABKcEfyB34XAThk3unt3g6qPIzXCmApnPcQQLkXQeSlSig7ly0CCDVe9bVHPkkADuusAOBQEgGEB/3pQz2wlwCKNe2gyt+w1wtAmXdPARjnF+bo+k7Zl9/DBqlNhDW7Rzg3+959mACMswKAY5kEsOat7L8TQNfftP67CkDrPwVzXr+219UCSM51uVYEAAAl5wqgWNMOqjzg1grgrtW1swCKkPfzS43FGYQQTM97rQBm9dXck08RwJrfNQB4GycKQOlnBZUfr4XlEFxlS4NpFm4yz/j5zgIoztCvF4M1e+tVzqR2T4H8LXrprbpGAE+aIgC136b7DgBncKAAkpCIrQgkGVv0Ldda/w1Aud5bAFkI+/HjHuch7OvP5l71DUC5B3a9NQJ41zeAYe6sGXUAwLGc8w3AXKsMKivUtgpgFmi7C0DG+PrDXtK5Q82hlqnfxBoBaLXZ488UQM19B4AzOOlPQEofjxJUfmxZ13YBJGMf+wtgDHl/nll94zmEUN26pzGUjVbu50MEYN53ADiDSQDyoD99qAcWZWGFuBWGcu3RgkoPr1cEMM45BNvCnrcIIJyNq+tn2F++rpzxd+f6lIFbLQD17AK+5iLo9TOMHCcAx0LtAHAsiQAkJLTAkwd+CoEFWWhyUB96JViMoNKC8TUBOHxNw2c7CyDuq9hbINSjz1u7J9/PqCvMYQhPqWfgUAFo8wHAKSQCcBRBPxDflrOAkACdh4A83Hk4GW99ZVhZQRXmTdd6WQCOGMb7CmCaV/uGFOrW16zb03KYqwJ+MuZYAcR9WusBwFHMBeCRBz5tT8LmaV8jCErh2EEVQmqaIwap3qZ+NeG2twAWg1wN6EDVnkS8+p/fBuQMZ3W/RwBljaGN51l93wHgDBQBAABACyAAAIBGQQAAAI2CAAAAGgUBAAA0h/zHELkCAIBmQAAAAI2CAAAAGgUBAAA0CgIAAGiUQQCX/h88xY0yEG0q7AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="ue:ExcelValue">[Saved.Values(Of UiPath.Excel.ExcelValue)("weather")]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Saved.Values(Of UiPath.Excel.ExcelValue)(&quot;weather&quot;)]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1098" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="50a240456b38ff4249c79ee83d999b28.png" Selector="&lt;html app='chrome.exe' title='Chennaithodi, Karnataka, India Weather Forecast | AccuWeather'/&gt;" Url="https://www.accuweather.com/en/in/chennaithodi/2864642/weather-forecast/2864642" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>

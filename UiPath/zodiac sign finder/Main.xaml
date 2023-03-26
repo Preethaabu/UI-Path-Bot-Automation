@@ -1,0 +1,240 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="824,1534.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="26">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="24">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="455.2,1469.6" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Sun Sign Calculator | Western Zodiac Sign Calculator" sap:VirtualizedContainerService.HintSize="412,1378.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="b9c91d44-a70f-47be-9a00-180a86452ebf" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1156.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSelectItem DisplayName="Select Item 'Birth Details (DD/MM/YY)'" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="16" ScopeIdentifier="b9c91d44-a70f-47be-9a00-180a86452ebf" Version="V1">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="32">
+                  <x:String>Select</x:String>
+                  <x:String>1</x:String>
+                  <x:String>2</x:String>
+                  <x:String>3</x:String>
+                  <x:String>4</x:String>
+                  <x:String>5</x:String>
+                  <x:String>6</x:String>
+                  <x:String>7</x:String>
+                  <x:String>8</x:String>
+                  <x:String>9</x:String>
+                  <x:String>10</x:String>
+                  <x:String>11</x:String>
+                  <x:String>12</x:String>
+                  <x:String>13</x:String>
+                  <x:String>14</x:String>
+                  <x:String>15</x:String>
+                  <x:String>16</x:String>
+                  <x:String>17</x:String>
+                  <x:String>18</x:String>
+                  <x:String>19</x:String>
+                  <x:String>20</x:String>
+                  <x:String>21</x:String>
+                  <x:String>22</x:String>
+                  <x:String>23</x:String>
+                  <x:String>24</x:String>
+                  <x:String>25</x:String>
+                  <x:String>26</x:String>
+                  <x:String>27</x:String>
+                  <x:String>28</x:String>
+                  <x:String>29</x:String>
+                  <x:String>30</x:String>
+                  <x:String>31</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" DesignTimeRectangle="668, 690, 171, 37" ElementType="DropDown" FriendlyName="'Select'" FullSelectorArgument="&lt;webctrl tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SELECT' type='' aaname='' /&gt;" Guid="9a4f1ced-79b6-46bb-b03d-cd5ef5fc56ea" InformativeScreenshot="027e492126691f3f52bd0ce5d49ed369.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="670, 669, 519, 21" ElementType="Text" FriendlyName="'Birth Details (DD/MM/YY)'" FullSelectorArgument="&lt;webctrl parentid='ss' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ss' tag='SPAN' type='' aaname='Birth Details (DD/MM/YY)' check:text='Birth Details (DD/MM/YY)' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                      <uix:Target DesignTimeRectangle="624, 621, 611, 27" ElementType="Text" FriendlyName="'Sun Sign Finder'" FullSelectorArgument="&lt;webctrl parentid='ss' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ss' tag='P' type='' aaname='Sun Sign Finder' check:text='Sun Sign Finder' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                      <uix:Target DesignTimeRectangle="802, 748, 250, 36" ElementType="Button" FriendlyName="'Calculate'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Calculate' check:text='Calculate' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAP4AAAAoCAYAAADe8UdjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMqSURBVHhe7Z2/btNAHMfZiBqJB+AtWNhRS1n7BhUDrIy8Q6ZOfQakDuQBEO0SISiqOhIxZEJKlmbr0OXIz+dzzuc7x9SxjX2fr/SRKt8fn91+7k8y9IkihEQXxCckwiA+IRGmIP6fz+fqx9sX6vJovOEAAHrLOHFZnHaTE//X5L2anTxX31+P1M0bAOg74rI4LW7bycSXWUEq+BoDQL8Rt+2VPxNftgSs9ADDRNwWx00y8eU84GsAAMNAHDexxD/wVgaAYSCOmyA+QCQgPkCEID5AhCA+QIQgPkCEIP5gOFP38subn3nK9sBkqh423T/MTv3l0CsQv1NSWd08St7/V/zVXAZ2q1aeMugGxO+IxWypX3ZBVDMZ/KsoiA/VQfwuuLhN3nOZRKs54kNzIH7rnKr1nbzlqiKY+k7upmqRqxcS39d+e+9EykJfZkdijdEjfrZryWWp1pNtP1p6N/k6ZiLchkmiaRC/bVKBqq/MIq4jipE5J6xH/MC9RNj7C/1zXfHdHYBu55PfL7Muy9f39QH7BfHbpsaWOUeyStpyuOL7JocidcT3o8dh1wuKn/ZpJqEtDR9bAPFb55HiaxHdlIlfFNBHbfHT626qiF+4h0VoXLAfEL9tjCiVV7NUaHfru2vFrzjB1BFfC+3eozjhhMQ37YNB/MZA/NYxH7b5VzoXLaDnvLtzq9/wih+cWKqLX7biQ7MgfhdU+DpvMZsmQoSkqXXG30i7tj/cqyKlK3r6DKHzuf1sQcGDfUDTIH5HaBk2KWz5U4GNKD450mvl4m9IZfVdy/rz9J+NrUx83/2ysTuTWongZrtfKJM2hXcD+wLxO2UrSi7uH3wmehopT67tEN++bsXdaWxF15HynSt+gtu31NfXyu/hHF3c50vi1IG9gvgAEYL4ABGC+AARgvgAEYL4ABGC+AARgvgAERIQf6yuj/0NAKDfiNvef6F1/e6lujocqW9HI/WTCQBgEIjL4rS4LY6bZOIvv3xSX189zbgEgN5jOy2Om2TiS36ff8xVBIBhIG7byYkvkVnh5sOhujp+5u0AAPqBOCwu2yu9SUF8QsjQo9RfO6I6wshIdnYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Select'" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="December" ScopeIdentifier="b9c91d44-a70f-47be-9a00-180a86452ebf" Version="V1">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="13">
+                  <x:String>Select</x:String>
+                  <x:String>January</x:String>
+                  <x:String>February</x:String>
+                  <x:String>March</x:String>
+                  <x:String>April</x:String>
+                  <x:String>May</x:String>
+                  <x:String>June</x:String>
+                  <x:String>July</x:String>
+                  <x:String>August</x:String>
+                  <x:String>September</x:String>
+                  <x:String>October</x:String>
+                  <x:String>November</x:String>
+                  <x:String>December</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" DesignTimeRectangle="844, 690, 171, 37" ElementType="DropDown" FriendlyName="'Select'" FullSelectorArgument="&lt;webctrl name='month' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='month' tag='SELECT' type='' aaname='' /&gt;" Guid="bb3b986f-8f40-4590-b9ac-1ac40f4c53c5" InformativeScreenshot="51006b0628d5bdc9374ca5e67446947a.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'Select'" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="2003" ScopeIdentifier="b9c91d44-a70f-47be-9a00-180a86452ebf" Version="V1">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="50">
+                  <x:String>1979</x:String>
+                  <x:String>1980</x:String>
+                  <x:String>1981</x:String>
+                  <x:String>1982</x:String>
+                  <x:String>1983</x:String>
+                  <x:String>1984</x:String>
+                  <x:String>1985</x:String>
+                  <x:String>1986</x:String>
+                  <x:String>1987</x:String>
+                  <x:String>1988</x:String>
+                  <x:String>1989</x:String>
+                  <x:String>1990</x:String>
+                  <x:String>1991</x:String>
+                  <x:String>1992</x:String>
+                  <x:String>1993</x:String>
+                  <x:String>1994</x:String>
+                  <x:String>1995</x:String>
+                  <x:String>1996</x:String>
+                  <x:String>1997</x:String>
+                  <x:String>1998</x:String>
+                  <x:String>1999</x:String>
+                  <x:String>2000</x:String>
+                  <x:String>2001</x:String>
+                  <x:String>2002</x:String>
+                  <x:String>2003</x:String>
+                  <x:String>2004</x:String>
+                  <x:String>2005</x:String>
+                  <x:String>2006</x:String>
+                  <x:String>2007</x:String>
+                  <x:String>2008</x:String>
+                  <x:String>2009</x:String>
+                  <x:String>2010</x:String>
+                  <x:String>2011</x:String>
+                  <x:String>2012</x:String>
+                  <x:String>2013</x:String>
+                  <x:String>2014</x:String>
+                  <x:String>2015</x:String>
+                  <x:String>2016</x:String>
+                  <x:String>2017</x:String>
+                  <x:String>2018</x:String>
+                  <x:String>2019</x:String>
+                  <x:String>2020</x:String>
+                  <x:String>2021</x:String>
+                  <x:String>2022</x:String>
+                  <x:String>2023</x:String>
+                  <x:String>2024</x:String>
+                  <x:String>2025</x:String>
+                  <x:String>2026</x:String>
+                  <x:String>2027</x:String>
+                  <x:String>2028</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" DesignTimeRectangle="1020, 690, 171, 37" ElementType="DropDown" FriendlyName="'Select'" FullSelectorArgument="&lt;webctrl name='year' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl name='year' tag='SELECT' type='' aaname='' /&gt;" Guid="65c33c63-89a3-4e4c-8b0c-c8002b396aec" InformativeScreenshot="431cab0c5fad8921fa02d201053beb0c.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector" />
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Calculate'" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b9c91d44-a70f-47be-9a00-180a86452ebf" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" DesignTimeRectangle="802, 748, 250, 36" ElementType="Button" FriendlyName="'Calculate'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' aaname='Calculate' check:text='Calculate' /&gt;" Guid="109e74a0-51b1-4431-852d-f0c310fe149d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAP4AAAAoCAYAAADe8UdjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMqSURBVHhe7Z2/btNAHMfZiBqJB+AtWNhRS1n7BhUDrIy8Q6ZOfQakDuQBEO0SISiqOhIxZEJKlmbr0OXIz+dzzuc7x9SxjX2fr/SRKt8fn91+7k8y9IkihEQXxCckwiA+IRGmIP6fz+fqx9sX6vJovOEAAHrLOHFZnHaTE//X5L2anTxX31+P1M0bAOg74rI4LW7bycSXWUEq+BoDQL8Rt+2VPxNftgSs9ADDRNwWx00y8eU84GsAAMNAHDexxD/wVgaAYSCOmyA+QCQgPkCEID5AhCA+QIQgPkCEIP5gOFP38subn3nK9sBkqh423T/MTv3l0CsQv1NSWd08St7/V/zVXAZ2q1aeMugGxO+IxWypX3ZBVDMZ/KsoiA/VQfwuuLhN3nOZRKs54kNzIH7rnKr1nbzlqiKY+k7upmqRqxcS39d+e+9EykJfZkdijdEjfrZryWWp1pNtP1p6N/k6ZiLchkmiaRC/bVKBqq/MIq4jipE5J6xH/MC9RNj7C/1zXfHdHYBu55PfL7Muy9f39QH7BfHbpsaWOUeyStpyuOL7JocidcT3o8dh1wuKn/ZpJqEtDR9bAPFb55HiaxHdlIlfFNBHbfHT626qiF+4h0VoXLAfEL9tjCiVV7NUaHfru2vFrzjB1BFfC+3eozjhhMQ37YNB/MZA/NYxH7b5VzoXLaDnvLtzq9/wih+cWKqLX7biQ7MgfhdU+DpvMZsmQoSkqXXG30i7tj/cqyKlK3r6DKHzuf1sQcGDfUDTIH5HaBk2KWz5U4GNKD450mvl4m9IZfVdy/rz9J+NrUx83/2ysTuTWongZrtfKJM2hXcD+wLxO2UrSi7uH3wmehopT67tEN++bsXdaWxF15HynSt+gtu31NfXyu/hHF3c50vi1IG9gvgAEYL4ABGC+AARgvgAEYL4ABGC+AARgvgAERIQf6yuj/0NAKDfiNvef6F1/e6lujocqW9HI/WTCQBgEIjL4rS4LY6bZOIvv3xSX189zbgEgN5jOy2Om2TiS36ff8xVBIBhIG7byYkvkVnh5sOhujp+5u0AAPqBOCwu2yu9SUF8QsjQo9RfO6I6wshIdnYAAAAASUVORK5CYII=" InformativeScreenshot="d26554f30361d7ce6e51676e6d65de51.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Sagittarius Astrology'" sap:VirtualizedContainerService.HintSize="356.8,156" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="b9c91d44-a70f-47be-9a00-180a86452ebf" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://astrologyfutureeye.com/zodiac/sagittarius-sign?sgn" DesignTimeRectangle="907, 412, 359, 40" ElementType="Text" FriendlyName="'Zodiac Sign'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TD' type='' /&gt;" Guid="f1e30cb3-6016-4fc1-af73-77bce893a512" InformativeScreenshot="292d5da6d79842f2d883b83d8d1a0dd0.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sagittarius Horoscope Sign | Personality Traits Forecast' /&gt;" SearchSteps="FuzzySelector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="906, 390, 720, 21" FriendlyName="'Sagittarius Astrology'" FullSelectorArgument="&lt;webctrl tag='CAPTION' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='CAPTION' type='' aaname='Sagittarius Astrology' check:text='Sagittarius Astrology' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAtQAAAAZCAYAAAARxLmzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAT7SURBVHhe7ZrLceMwDEDTRvqKe/H4ujVkUkly2UJ2Js1oRUoiAQKkKYvO970ZHExJIATp8ETzYQIAAAAAgJtBqAEAAAAADoBQAwAAAAAcAKEGAAAAADgAQg0AAAAAcACEGgAAAADgAAg1AAzkfXp5epweH3Wcnt/X4/fj9bzO9/QyV5F5fz6ZsUBt/Ai1Gj4O3f/L2zp8hLfLnOsyva4/hxHzhjpP08u/dQwA4JuCUAPAGP69TKdV5Nw4D1cyhSezNcG9l/h+ulCXz+Bgz+NHR8yFUAMAtECoAWAISSYbMWTFdAcfLdSfTRbgLY6JMEINANAHQg0AAxBbDUpJlaumasX0dbps4yk8cSu2kYQcIucm6VqSvdxznP9UxrdZr9ck53kVAhu2tVhRz/n0tpdKv5JkiuheZRZznS+pP7XtNla+5bn+1p1Yq+q97Jfok/NvhfmYagh16uMWskcS1a8lj3wGfxsfBHf9WACAXwdCDQAD2Lt3tyK8MaTgtM5bYpxQ99VkZC+GlblFAHPOq0LtyfQWPVJdCKqtJePJ9BZLnX1CrWKtsZVb3Ycr1K1noMW7OU+I4j3Q76S4v+4PFgCAOgg1AIyhJoSOsCQZkrInrt/kR0pTFiItXb5Q18cC3nhvTenaOcrVX5u3X6ibNRUy6WGud4U14Mtkvq/88ZDnFx85SqiL1V15TOR2n6NTX66hItlOX/1+5fGUU76HapV9HQMAOABCDQDDUEJThhAfjV0NXSTHSmeiJbriXG8sUBvP1GoS15YyOWPz3iDUIXavmnrzCOlU+fS9lR8FkmtCXV7rnh8Rc261GKGu9WqmPNd5/gvOO5POzTXV6wQAuA2EGgDGI4RHRRI7K6wyjFCXgumsMHqSXBNnf7ynpnrOgD3WL9R65XeLcnXZp/khE6MQR/f5WLm8JtRaZnf2ppTk1qpxeay8VtB6Bkve3PvWxwQAwB4QagC4M1JUFzFL0hPCCJYVn48Q6r6a6jkD9tgOod7olN2M7G89PHl0RVzU8zOEWoyF9yjl6vtYAQDoAaEGgOMICfTELQlNlJjKCqGR1z7pbImuNxaw47011XMG7LEbhFoiRNLra0Sc04zWPAHnXvcKtXt+RNzvR2/5CAiJvpzXGq/1AwBgBwg1AAwgy1AzosR40iPG5rBCJ8VJz7WNjxLqazXtE2qZI0umWhmO53rzB8S9lqv0KzmXv+Jqj1dyOvLuCnJDqJXci9zuczRCLfqn7kXUm3rjjXl93dDPMkT1AwUA4AYQagAYg1g1rMUmU0p8nMiipuU5xdPJSJ0numaeVfK88d6a9gm1GKvFdm6zf74sq/449UQcyW3fq5DnsqYwR0uoZ1q5lcQ6Qq3ux4Re9fbnmd8L98OkPL/WTwCA20CoAWAgdiUwhiN7WjSDLIlr5cppkTNKmSN1vugWgpaO+eM9NfnzLNSO6byhZpG3VW8MLZIKIbz1FVfZP5FLivYW5p507+P1V4Q64uQ257pCvVD2y+t1RAn/cm/V5yNrquUDALgRhBoAvh89Uge/kh6hZrsHAIwGoQaAL4tcqZTinP++b6zews+lutqcV/hLac7vEts9AGA8CDUAfF3KPbxlqK0h8Hsot6KUkaXZbB/hnQGAO4BQA8DXxtmPG4K/7cHIcgz9r4U6h73TAHAnEGoAAAAAgAMkoX54eCAIgiAIgiAIojMWpuk/fCGQbtLYUDMAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="ue:ExcelValue">[Saved.Values(Of UiPath.Excel.ExcelValue)("zodiacSign")]</OutArgument>
+              </uix:NGetText.Text>
+            </uix:NGetText>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="356.8,84" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[Saved.Values(Of UiPath.Excel.ExcelValue)(&quot;zodiacSign&quot;)]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1098" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE7SURBVDhPYxgF1AUsQCwExJpAbALEFgzKOjYMfCJuYDYDgwYQiwCxMBCzATEcMAIxOxBLAbEf0JQCFl7+It6QlGKJ6inFYsXdxQyq+kVAuSwgTgPiQCDWB2JBIGYCYrABPEDsbWKgX7R765Zii9jU4si9F4oZlPWLdTrmFKs3TCn28vUrqSwuKlGQkS4Bqi0A4gAglgNisJPcFeVkS/7//w/Cxd7J6cWVF24X21S1Fhccv1KsmV1RvH3btmKQfENNDciABCA2A2I+IGZwUpCTi1+1fFkiUEESEGdv27w538Q/sDBqwpQim/TsYl0z8+LTR4/kTZnQHy/Ez+cE1KMAxKwgzSDA4u/ry3P29CneebNn8bU01Et3tbaoifDy6ADlDIHYTlpUxFqAmwsUsGJAzAzEYL+PAqoABgYAmwZXg3Xk1csAAAAASUVORK5CYII=" InformativeScreenshot="a223b1c3f0e118d064c48796dc4b8a61.png" Selector="&lt;html app='msedge.exe' title='Sun Sign Calculator | Western Zodiac Sign Calculator'/&gt;" Url="https://astrologyfutureeye.com/astro-calculators/sun-sign-calculator" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
